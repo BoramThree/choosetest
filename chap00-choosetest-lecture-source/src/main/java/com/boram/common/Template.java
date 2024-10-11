@@ -17,7 +17,7 @@ public class Template {
 
         if(sqlSessionFactory == null) {
 
-            String resource = "config/mybatis-config.xml";
+            String resource = "com/config/mybatis-config.xml";
 
             try {
                 InputStream inputStream = Resources.getResourceAsStream(resource);
