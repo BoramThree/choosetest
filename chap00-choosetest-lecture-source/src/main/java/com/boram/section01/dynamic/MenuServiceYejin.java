@@ -43,5 +43,6 @@ public class MenuServiceYejin {
         } else {
             System.out.println("출력할 결과가 없습니다.");
         }
+        
     }
 }
