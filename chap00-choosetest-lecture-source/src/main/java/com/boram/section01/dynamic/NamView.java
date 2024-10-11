@@ -10,6 +10,7 @@ public class NamView {
         MenuServiceNam menuServiceNam = new MenuServiceNam();
 
         //
+        //
 
     }
 
