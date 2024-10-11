@@ -8,7 +8,9 @@
 
     <typeAliases>
         <typeAlias type="com.boram.common.MenuDTOYejin" alias="yejinDTO"/>
+        <typeAlias type="com.boram.common.HjCategoryDTO" alias="HjDTO" />
     </typeAliases>
+
 
     <environments default="dev">
         <environment id="dev">
