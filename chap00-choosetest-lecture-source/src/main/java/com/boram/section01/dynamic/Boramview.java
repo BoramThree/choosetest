@@ -7,6 +7,7 @@ public class Boramview {
 
     public void display() {
         Scanner sc = new Scanner(System.in);
+        YejinView yejinView = new YejinView();
 
 
         do {
@@ -28,7 +29,7 @@ public class Boramview {
                     break;
 
                 case 2:
-
+                    yejinView.display();
                     break;
 
                 case 3:
