@@ -27,6 +27,33 @@
             WHERE
             ORDERABLE_STATUS = 'N'
         </if>
+        <if test="input != '판매중' and input != '판매대기'">
+            WHERE
+            ORDERABLE_STATUS = 'Y'
+        </if>
+
+    </select>
+
+    <select id="selectOrderableChoose" parameterType="string" resultMap="yejinResultMap">
+
+        SELECT
+            *
+        FROM
+            TBL_MENU
+        <choose>
+            <when test="input == '판매중'">
+                WHERE
+                ORDERABLE_STATUS = 'Y'
+            </when>
+            <when test="input == '판매대기'">
+                WHERE
+                ORDERABLE_STATUS = 'N'
+            </when>
+            <otherwise>
+                WHERE
+                ORDERABLE_STATUS = 'Y'
+            </otherwise>
+        </choose>
 
     </select>
 

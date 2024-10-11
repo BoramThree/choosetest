@@ -6,4 +6,6 @@ import java.util.List;
 
 public interface DynamicSqlMapperYejin {
     List<MenuDTOYejin> selectOrderable(String input);
+
+    List<MenuDTOYejin> selectOrderableChoose(String input);
 }

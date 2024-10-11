@@ -28,4 +28,20 @@ public class MenuServiceYejin {
             System.out.println("출력할 결과가 없습니다.");
         }
     }
+
+    public void selectOrderableChoose(String input) {
+        SqlSession sqlSession = getSqlSession();
+
+        mapperYejin = sqlSession.getMapper(DynamicSqlMapperYejin.class);
+
+        List<MenuDTOYejin> menuList = mapperYejin.selectOrderableChoose(input);
+
+        if (menuList != null && menuList.size() > 0){
+            for (MenuDTOYejin menu : menuList){
+                System.out.println(menu);
+            }
+        } else {
+            System.out.println("출력할 결과가 없습니다.");
+        }
+    }
 }
