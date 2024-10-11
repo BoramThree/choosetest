@@ -47,6 +47,7 @@ public class YejinView {
 
             System.out.println("(끝내려면 exit를 입력하세요)");
             System.out.print("판매 중과 판매대기 중 마음에 드는것을 입력해주세요: ");
+            System.out.print("판매 중과 판매대기 중 마음에 드는것을 입력해주세요: ");
             String input = sc.nextLine();
             
             switch (input){
