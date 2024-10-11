@@ -9,6 +9,7 @@ public class NamView {
         Scanner sc = new Scanner(System.in);
         MenuServiceNam menuServiceNam = new MenuServiceNam();
 
+        //
 
     }
 
