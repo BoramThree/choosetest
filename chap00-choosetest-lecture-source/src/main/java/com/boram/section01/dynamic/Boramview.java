@@ -4,10 +4,9 @@ import java.util.Scanner;
 
 public class Boramview {
 
-
     public void display() {
         Scanner sc = new Scanner(System.in);
-
+        HjView hjView = new HjView();
 
         do {
 
@@ -39,7 +38,7 @@ public class Boramview {
                     break;
 
                 case 5:
-
+                    hjView.display();
                     break;
 
             }

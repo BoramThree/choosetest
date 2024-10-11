@@ -6,6 +6,10 @@
 
     <properties resource="com.config.connection-info.properties"/>
 
+    <typeAliases>
+        <typeAlias type="com.boram.common.HjCategoryDTO" alias="HjDTO" />
+    </typeAliases>
+
     <environments default="dev">
         <environment id="dev">
             <transactionManager type="JDBC"></transactionManager>
@@ -19,7 +23,7 @@
     </environments>
 
     <mappers>
-        <package name="com.boram.section01.dynamic"/>
+        <package name="com/boram/section01/dynamic" />
     </mappers>
 
 </configuration>
