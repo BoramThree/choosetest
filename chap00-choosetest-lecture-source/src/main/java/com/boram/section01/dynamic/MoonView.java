@@ -58,9 +58,26 @@ public class MoonView {
 
         do {
 
-            System.out.println("원하는 식재료를선택해주세요 (,) ");
+            System.out.println("원하는 식재료가 들어간 메뉴찾기");
+            System.out.print("선택하실 메뉴를 입력해주세요 : ");
+            int no = sc.nextInt();
+
+            switch (no){
+                case 1 :
+                    MenuServiceMoon.selectMenuByname(inputMenu());break;
+            }
         }
 
+    }
+
+    private static String inputMenu() {
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("보기 :우럭,생갈치,마늘,김치,미역,홍어,날치알,멸치");
+        System.out.print("보기에서 원하는 식재료를 입력해주세요 : ");
+        String menuname = sc.nextLine();
+
+        return menuname;
     }
 
 
