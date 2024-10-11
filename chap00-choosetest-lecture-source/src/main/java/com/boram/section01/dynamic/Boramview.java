@@ -34,7 +34,7 @@ public class Boramview {
                     break;
 
                 case 3:
-
+                    MoonView.display();
                     break;
 
                 case 4:
